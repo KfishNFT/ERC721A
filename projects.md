@@ -33,7 +33,7 @@ Here are a list of projects that have or will be implementing ERC721A as part of
 - [Mister Otter River Club](https://morc.vercel.app/) | [Etherscan](https://etherscan.io/address/0xa8c724a829a48f551950a783c6ec50e728725026) | [Twitter](https://twitter.com/misterotternft) 
 - [Tasty Bones NFT](https://tastybones.xyz/) | [Etherscan](https://etherscan.io/address/0x1b79c7832ed9358E024F9e46E9c8b6f56633691B) | [Twitter](https://twitter.com/tastybonesnft) 
 - [BASΞD VITALIK](https://basedvitalik.io/) | [Etherscan](https://etherscan.io/address/0xea2dc6f116a4c3d6a15f06b4e8ad582a07c3dd9c) | [Twitter](https://twitter.com/art101nft) 
-- [Candy Chain Web Platform](https://candychain.io) | [Etherscan](https://etherscan.io/address/0x3F28468BC569DcC8E58B465Fa4893340aEB1Cc54) | [Twitter](https://twitter.com/Candy_Chain_)
+- [Candy Chain Web Platform](https://candychain.io) | [Etherscan](https://etherscan.io/address/0x54019e5C4e4fe8d1802cd37B50E707c28A17A5bc) | [Twitter](https://twitter.com/Candy_Chain_)
 - [Underground Ape Club](https://undergroundape.club/) | [Etherscan](https://etherscan.io/address/0xB94b38fCb227350989f95F54F54f43b5Fcc3ccff) | [Twitter](https://twitter.com/undergroundapes) | [Opensea](https://opensea.io/collection/uacofficial)
 - [Delinquentz](https://delinquentz.io/) | [Etherscan](https://etherscan.io/address/0xE4Ee205AF5113e479A0F2FBd25be2eF0C17f952d) | [Twitter](https://twitter.com/dlnqntz) 
 - [Troverse](https://troverse.io/) | [Etherscan](https://etherscan.io/address/0x762bc5880f128dcac29cffdde1cf7ddf4cfc39ee) | [Twitter](https://twitter.com/TroverseNFT) 
@@ -44,5 +44,7 @@ Here are a list of projects that have or will be implementing ERC721A as part of
 - [Beetchy Pandas](https://www.beetchypandas.club/) | Etherscan | [Twitter](https://twitter.com/BeetchyPandas) | Opensea
 - [Mooning Monkey](https://mooningmonkey.com/) | [Etherscan](https://etherscan.io/address/0x6206d330d018cfdca00c7e9e210c79d51c6b1d07) | [Twitter](https://twitter.com/MooningMonkeys) | [OpenSea](https://opensea.io/collection/officialmooningmonkey)
 - [Zero Code NFT](https://zerocodenft.com/) | [Etherscan](https://etherscan.io/address/0x34eca06db779169003117e8999b5e008086f4cc3) | [Twitter](https://twitter.com/zero_code_nft) | [OpenSea](https://opensea.io/collection/zerocodenft)
-- [mrVroom NFT](https://mrvroomnft.com/) | [Etherscan](https://etherscan.io/address/0x609d11cf2298291F47AB9C851B85d83e83CEC320#code) | [Twitter](https://twitter.com/mrvroomnft)
+- [mrVroom NFT](https://mrvroomnft.com/) | [Etherscan](https://etherscan.io/address/0x267CfEe6671C776cBdf10AAdCb90dCD9DB242723) | [Twitter](https://twitter.com/mrvroomnft)
 - [BadKidz](https://https://badkidz.ca/) | [Etherscan](https://etherscan.io/address/0x0dcb15683842184925091101cd696e1d58c0d871) | [Opensea](https://opensea.io/collection/badkidz-v2) | [Twitter](BadKidz_NFT)
+- Anoobs | Etherscan | [Twitter](https://twitter.com/anoobsnft)
+- [CryptoFamers](https://www.cryptofamers.io/) | [Etherscan](https://etherscan.io/address/0x496901a8a60218a5c582de36612b8fac84895cd9) | [Twitter](https://twitter.com/CryptoFamers) | [Instagram](https://www.instagram.com/cryptofamers/) | [OpenSea](https://opensea.io/collection/cryptofamers)

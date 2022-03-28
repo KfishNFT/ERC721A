@@ -67,7 +67,7 @@ uint256 internal _currentIndex
 
 The next token ID to be minted.
 
-To get the total number of tokens in existence, please see [`_totalSupply`](#totalSupply).
+To get the total number of tokens in existence, please see [`totalSupply`](#totalSupply).
 
 To get the total number of tokens minted, please see [`_totalMinted`](#_totalMinted).
 
@@ -87,7 +87,7 @@ mapping(uint256 => TokenOwnership) internal _ownerships
 
 Mapping from token ID to ownership details.
 
-An empty struct does value does not necessarily mean the token is unowned. 
+An empty struct value does not necessarily mean the token is unowned. 
 
 See [`_ownershipOf`](#_ownershipOf).
 
@@ -113,9 +113,23 @@ function supportsInterface(
 ) public view virtual override(ERC165, IERC165) returns (bool)
 ```
 
-Returns true if this contract implements the interface defined by `interfaceId`. 
+Returns `true` if this contract implements the interface defined by `interfaceId`. 
 
 See the corresponding [EIP section](https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified) to learn more about how these ids are created.
+
+### totalSupply
+
+`IERC721Enumerable-totalSupply`
+
+```solidity
+function totalSupply() public view returns (uint256)
+```
+
+Returns the total number of tokens in existence. 
+
+Burned tokens will reduce the count.
+
+To get the total number of tokens minted, please see [`_totalMinted`](#_totalMinted).
 
 ### balanceOf
 
@@ -347,7 +361,7 @@ Returns the auxillary data for `owner` (e.g. number of whitelist mint slots used
 ### \_setAux
 
 ```solidity
-function _getAux(address owner) internal view returns (uint64)
+function _setAux(address owner, uint64 aux) internal
 ```
 
 Sets the auxillary data for `owner` (e.g. number of whitelist mint slots used).
