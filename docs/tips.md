@@ -7,7 +7,7 @@ For users, it is more gas optimal to transfer bulk minted tokens in ascending to
 For example, if you have have bulk minted token IDs (33, 34, ..., 99),  
 you should transfer in the order (33, 34, ..., 99).
 
-The is due to how the lazy-initialization mechanism works initernally:  
+The is due to how the lazy-initialization mechanism works internally:  
 it scans uninitialized slots in descending order until it finds an initialized slot.
 
 ## Popularity
@@ -57,9 +57,11 @@ You can use them to design tokenomics with very minimal gas overhead.
 | O(1) ownerOf     | Yes            | No ownerOf             |
 | O(1) balanceOf   | For all tokens | Within fungible tokens |
 | O(1)\* bulk mint | For all tokens | Within fungible tokens |
-| # mint `SSTORE`s | 2              | 1                      |
+| # mint `SSTORE`s | 3              | 1 <sup>&#8224;</sup>   |
 
 \* Approximately O(1) for ERC721A. See [Design](design.md).
+
+<sup>&#8224;</sup> For unique collections, ERC1155 needs a counter which needs 1 more `SSTORE`.
 
 ERC1155 requires centralized indexing services to emulate ERC721-like functionality off-chain.
 
