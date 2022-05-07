@@ -438,16 +438,37 @@ contract ERC721AUpgradeable is
         address to,
         uint256 tokenId
     ) private {
+        _transfer(from, to, tokenId, true);
+    }
+
+    /**
+     * @dev Transfers `tokenId` from `from` to `to`.
+     *
+     * Requirements:
+     *
+     * - `to` cannot be the zero address.
+     * - `tokenId` token must be owned by `from`.
+     *
+     * Emits a {Transfer} event.
+     */
+    function _transfer(
+        address from,
+        address to,
+        uint256 tokenId,
+        bool approvalCheck
+    ) internal virtual {
         TokenOwnership memory prevOwnership = _ownershipOf(tokenId);
 
         if (prevOwnership.addr != from) revert TransferFromIncorrectOwner();
 
-        bool isApprovedOrOwner = (_msgSender() == from ||
-            isApprovedForAll(from, _msgSender()) ||
-            getApproved(tokenId) == _msgSender());
+        if(approvalCheck) {
+            bool isApprovedOrOwner = (_msgSender() == from ||
+                isApprovedForAll(from, _msgSender()) ||
+                getApproved(tokenId) == _msgSender());
 
-        if (!isApprovedOrOwner) revert TransferCallerNotOwnerNorApproved();
-        if (to == address(0)) revert TransferToZeroAddress();
+            if (!isApprovedOrOwner) revert TransferCallerNotOwnerNorApproved();
+            if (to == address(0)) revert TransferToZeroAddress();
+        }
 
         _beforeTokenTransfers(from, to, tokenId, 1);
 
